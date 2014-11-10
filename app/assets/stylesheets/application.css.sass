@@ -42,6 +42,11 @@ p
     background-color: #be194d
 
 
+#home-jumbotron
+  background-color: #ffa029
+  min-height: 300px
+
+
 .box
   margin: 80px 0
   text-align: center
@@ -49,11 +54,13 @@ p
   a
     color: white
     padding: 50px 50px
-    background-color: teal
+    background-color: #4564ff
+    border-bottom: 6px solid #2f4bd4
 
+    &:hover
+      background-color: #2f4bd4
 
-
-#jumbotron
+.jumbotron
   background-image: url('travel-bg.png')
   background-size: cover
   background-repeat: no-repeat
@@ -61,8 +68,19 @@ p
   min-height: 700px
   text-align: center
 
+  .back-button
+    text-align: left
+    background-color: #4564ff
+    padding: 6px 10px 10px 10px
+    width: 40px
+    height: 40px
+
   nav.top-bar
     background: transparent
+    margin-top: 30px
+
+    @media (max-width: 640px)
+      margin-top: 0
 
     ul.title-area h1
       text-align: left
@@ -70,15 +88,30 @@ p
     ul.right li
       background: transparent
 
+      .button
+        color: white
+        background-color: #ff4580
+        border-bottom: 3px solid #be194d
+
+        &:hover
+          background-color: #be194d
+
     ul.right li #login a
       background: transparent
       color: white
 
-  #jumbotron-text-container
+  .jumbotron-text-container
     padding: 120px 20px
 
     a.jumbo-cta
-      font-size: 1.4em
+      font-size: 1.4em 
+
+    h5
+      padding: 15px 0 60px 0
+
+.benefits
+  @media (max-width: 1024px)
+    text-align: center
 
 #benefits-web-1
   padding: 80px 20px
@@ -113,7 +146,7 @@ p
       margin-left: auto
       margin-right: auto
 
-#call-to-action
+.call-to-action
   background-image: url('balloon-bg.png')
   background-size: cover
   background-repeat: no-repeat
@@ -132,7 +165,7 @@ p
   a
     font-size: 1.4em
 
-#footer
+.footer
   background-color: #374956
   padding: 20px 0
 
