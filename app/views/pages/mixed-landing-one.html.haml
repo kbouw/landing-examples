@@ -1,0 +1,19 @@
+= render 'layouts/header'
+
+.jumbotron
+  = link_to root_path do
+    .back-button
+      = image_tag 'back-arrow.png'
+
+  .jumbotron-text-container
+    .row
+      .col-md-5
+        %h1.inverse Your travel bucketlist
+        %h5.inverse Discover more than 5,000 unique travel destinations around the world <br> and start planning your next adventure.
+        .get-app
+          = link_to '#' do
+            = image_tag 'app-store.png'
+          = link_to '#' do
+            = image_tag 'google-play.png'
+      .large-6.large-offset-1.columns
+        = image_tag 'jumbo-mobile-placeholder.png'
