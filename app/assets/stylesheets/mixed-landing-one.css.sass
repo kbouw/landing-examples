@@ -22,6 +22,11 @@
 .benefit1, .benefit2, .benefit3, .call-to-action
 	padding: 90px 0
 
+	@media (max-width: 767px)
+		padding: 90px 20px
+		h2
+			margin-bottom: 25px
+
 
 .benefit1, .benefit3
 	img
@@ -38,6 +43,7 @@
 	hr
 		width: 25%
 		margin: 70px auto
+		border-color: #e4e4e4
 
 
 .benefit2
@@ -45,6 +51,13 @@
 
 	p
 		padding-right: 30px
+
+	@media (max-width: 767px)
+		p
+			padding: 0
+
+		img
+			margin-top: 50px
 
 
 .call-to-action

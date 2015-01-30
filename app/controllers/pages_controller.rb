@@ -16,4 +16,7 @@ class PagesController < ApplicationController
 
   def mixed_landing_one
   end
+
+  def mixed_landing_two
+  end
 end
