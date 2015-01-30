@@ -1,29 +1,22 @@
+= render 'layouts/header'
+
 .jumbotron
   = link_to root_path do
     .back-button
       = image_tag 'back-arrow.png'
-  .row
-    %nav.top-bar{"data-topbar" => "", :role => "navigation"}
-      %ul.title-area
-        %li.name
-          %h1
-            = link_to "Travelist", '#'
-        / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
-        %li.toggle-topbar.menu-icon
-          %a{:href => "#"}
-            %span Menu
-      %section.top-bar-section
-        / Right Nav Section
-        %ul.right
-          %li
-            #login= link_to "Login", '#'
-          %li
-            = link_to "Register", '#', class: "button"
 
   .jumbotron-text-container
-    %h1.inverse Your travel bucketlist
-    %h5.inverse Discover more than 5,000 unique travel destinations around the world <br> and start planning your next adventure.
-    = link_to 'Get started', '#', class: "button jumbo-cta"
+    .row
+      .large-5.columns
+        %h1.inverse Your travel bucketlist
+        %h5.inverse Discover more than 5,000 unique travel destinations around the world <br> and start planning your next adventure.
+        .get-app
+          = link_to '#' do
+            = image_tag 'app-store.png'
+          = link_to '#' do
+            = image_tag 'google-play.png'
+      .large-6.large-offset-1.columns
+        = image_tag 'jumbo-mobile-placeholder.png'
 
 #benefits-mobile-1.benefits
   %h2.text-center Some cool tagline here

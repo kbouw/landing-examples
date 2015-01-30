@@ -2,27 +2,18 @@ class PagesController < ApplicationController
   def home
   end
 
-  def web_landing_one_theme
+  def web_landing_one
   end
 
-  def web_landing_one_wireframe
+  def web_landing_two
   end
 
-  def web_landing_two_theme
+  def mobile_landing_one
   end
 
-  def web_landing_two_wireframe
+  def mobile_landing_two
   end
 
-  def mobile_landing_one_theme
-  end
-
-  def mobile_landing_one_wireframe
-  end
-
-  def mobile_landing_two_theme
-  end
-
-  def mobile_landing_two_wireframe
+  def mixed_landing_one
   end
 end

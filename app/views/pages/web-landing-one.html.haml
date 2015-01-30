@@ -1,25 +1,9 @@
+= render 'layouts/header'
+
 .jumbotron
   = link_to root_path do
     .back-button
       = image_tag 'back-arrow.png'
-  .row
-    %nav.top-bar{"data-topbar" => "", :role => "navigation"}
-      %ul.title-area
-        %li.name
-          %h1
-            = link_to '#' do
-              = image_tag 'travelist-logo-large.png'
-        / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
-        %li.toggle-topbar.menu-icon
-          %a{:href => "#"}
-            %span Menu
-      %section.top-bar-section
-        / Right Nav Section
-        %ul.right
-          %li
-            #login= link_to "Login", '#'
-          %li
-            = link_to "Register", '#', class: "button"
 
   .jumbotron-text-container
     %h1.inverse Your travel bucketlist
@@ -57,15 +41,4 @@
   %h5.inverse Join Travelist today and discover more than 5,000 unique travel destinations.
   = link_to "Create your bucketlist", '#', class: "button"
 
-.footer
-  .row
-    .small-4.large-4.columns
-      %p.text-left © 2014 Travelist
-    .small-4.large-4.columns
-      %p.text-center Privacy Policy
-    .small-4.large-4.columns
-      .text-right
-        = link_to '#' do
-          = image_tag 'facebook-48.png'
-        = link_to '#' do
-          = image_tag 'twitter-48.png'
+= render 'layouts/footer'
