@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,800)
-@import "foundation"
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300|Open+Sans:600,400)
 @import "bootstrap-sprockets"
 @import "bootstrap"
 
@@ -14,18 +13,17 @@
 // General --------------
 
 body
-  min-width: 405px
-
-h1, h2, h3, h4, h5, p
-  font-family: 'Open Sans', sans-serif
+  background-color: #f9f9f9
 
 h1
-  font-weight: 800
-  font-size: 45px
+  font-weight: 100
+  font-size: 55px
+  font-family: 'Roboto', sans-serif
 
 h2
-  font-weight: 400
+  font-weight: 100
   font-size: 34px
+  font-family: 'Roboto', sans-serif
 
 h3
   font-weight: 300
@@ -36,12 +34,12 @@ h4
   font-size: 22px
 
 p
-  font-weight: 300
-  font-size: 16px
-  color: #6d6d6d
+  font-family: 'Open Sans', sans-serif
+  font-size: 15px
+  color: #8c8c8c
 
 
-// Utility Classes --------------
+// Utility Classes
 .text-left
   text-align: left
 
@@ -55,18 +53,26 @@ p
   color: white
 
 .jumbotron
+  background-image: url('travel-bg-blur.png')
   background-size: cover
   background-repeat: no-repeat
   background-position: center
-  min-height: 700px
 
-  .back-button
-    text-align: left
-    background-color: #4564ff
-    padding: 6px 10px 10px 10px
-    width: 40px
-    height: 40px
 
+// Buttons 
+
+.btn
+  border: 1px solid #93ba2c
+  border-radius: 3px
+  background-color: #93ba2c
+  padding: 10px 30px
+  text-transform: uppercase
+  color: white
+
+  &:hover
+    background-color: #80a421
+    border-color: #80a421
+    color: white
 
 // Header
 
@@ -81,6 +87,7 @@ p
 
     a
       text-transform: uppercase
+      font-size: 10px
 
     a#registration
       border: 1px solid #343434
@@ -109,19 +116,6 @@ p
   &:hover
     background-color: #be194d
 
-.jumbotron
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: center
-  min-height: 700px
-
-  .back-button
-    text-align: left
-    background-color: #4564ff
-    padding: 6px 10px 10px 10px
-    width: 40px
-    height: 40px
-
 .box
   margin: 80px 0
   text-align: center
@@ -134,65 +128,6 @@ p
 
     &:hover
       background-color: #2f4bd4
-
-.jumbotron
-  background-image: url('travel-bg.png')
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: center
-  min-height: 700px
-
-  .back-button
-    text-align: left
-    background-color: #4564ff
-    padding: 6px 10px 10px 10px
-    width: 40px
-    height: 40px
-
-  nav.top-bar
-    background: transparent
-    margin-top: 30px
-
-    @media (max-width: 640px)
-      margin-top: 0
-
-    ul.title-area h1
-      text-align: left
-
-    ul.right li
-      background: transparent
-
-      .button
-        color: white
-        background-color: #ff4580
-        border-bottom: 3px solid #be194d
-
-        &:hover
-          background-color: #be194d
-
-    ul.right li #login a
-      background: transparent
-      color: white
-
-  .jumbotron-text-container
-    padding-top: 120px
-
-    img
-      max-width: none
-
-    h1
-      font-size: 2.5em
-
-    h5
-      font-size: 1.4em
-
-    .get-app
-
-      img
-        width: 150px
-
-    @media (max-width: 1024px)
-      text-align: center
 
 .benefits
   @media (max-width: 1024px)
@@ -232,27 +167,14 @@ p
       margin-right: auto
 
 .call-to-action
-  background-image: url('balloon-bg.png')
   background-size: cover
   background-repeat: no-repeat
   background-position: center
   min-height: 400px
-  text-align: center
-  padding: 70px 20px
-
-  h1
-    font-size: 3.5em
-    margin: 0
-
-  h5
-    padding: 10px 0 50px 0
-
-  a
-    font-size: 1.4em
 
 // Footer --------------
-.footer
-  background-color: #374956
+#footer
+  background-color: #2e2e2e
   padding: 10px 0
   line-height: 5em
 
