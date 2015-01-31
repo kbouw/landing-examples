@@ -3,12 +3,12 @@
 @import "bootstrap"
 
 @import "custom"
-@import "mixed-landing-one"
-@import "mixed-landing-two"
 @import "web-landing-one"
 @import "web-landing-two"
+@import "web-landing-three"
 @import "mobile-landing-one"
 @import "mobile-landing-two"
+@import "mobile-landing-three"
 
 
 // General --------------
@@ -55,6 +55,12 @@ p
 
 .jumbotron
   background-image: url('travel-bg-blur.png')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+.call-to-action
+  background-image: url('balloon-bg.png')
   background-size: cover
   background-repeat: no-repeat
   background-position: center
@@ -107,71 +113,22 @@ p
         margin: 0
 
 
-//
+// Home
 
-.button
-  color: white
-  background-color: #ff4580
-  border-bottom: 3px solid #be194d
-
-  &:hover
-    background-color: #be194d
-
-.box
-  margin: 80px 0
-  text-align: center
-
-  a
-    color: white
-    padding: 50px 50px
-    background-color: #4564ff
-    border-bottom: 6px solid #2f4bd4
-
-    &:hover
-      background-color: #2f4bd4
-
-.benefits
-  @media (max-width: 1024px)
+#home
+  .box
+    padding: 80px 0
     text-align: center
 
-#benefits-web-1
-  padding: 80px 20px
+    a
+      color: white
+      padding: 50px 50px
+      background-color: #4564ff
+      border-bottom: 6px solid #2f4bd4
 
-  .row
-    padding: 60px 0
+      &:hover
+        background-color: #2f4bd4
 
-    .text-content
-      padding-top: 40px
-
-#benefits-web-2
-  padding: 80px 20px
-
-  .text-container
-    padding: 0 30px
-
-  img
-    display: block
-    margin: auto
-
-#benefits-mobile-1
-  padding: 80px 20px
-
-  .row
-    padding: 60px 0
-
-    .text-content
-      padding-top: 40px
-
-    img
-      display: block
-      margin-left: auto
-      margin-right: auto
-
-.call-to-action
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: center
-  min-height: 400px
 
 // Footer --------------
 #footer

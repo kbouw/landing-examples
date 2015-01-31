@@ -1,63 +1,50 @@
-= render 'layouts/header'
+#mobile-landing-one
+  .jumbotron
+    .container
+      .row
+        .col-md-6
+          %h1 Your travel bucketlist
+          %p Discover more than 5,000 unique travel desitnations around the world and start planning your next adventure.
+          / = link_to "Get Started", '#', class: "btn"
+          .app-store-container
+            = link_to '#' do
+              = image_tag 'app-store.png'
+            = link_to '#' do
+              = image_tag 'google-play.png'
+        .col-md-6
+          .text-center
+            = image_tag "double-mobile.png", class: "img-responsive"
 
-.jumbotron
-  = link_to root_path do
-    .back-button
-      = image_tag 'back-arrow.png'
+  .benefit1
+    .container
+      .text-center
+        %h2 This is a section about the product, something <br> supportive of the benefits, features, or anything else.
 
-  .jumbotron-text-container
-    .row
-      .large-5.columns
-        %h1.inverse Your travel bucketlist
-        %h5.inverse Discover more than 5,000 unique travel destinations around the world <br> and start planning your next adventure.
-        .get-app
-          = link_to '#' do
-            = image_tag 'app-store.png'
-          = link_to '#' do
-            = image_tag 'google-play.png'
-      .large-6.large-offset-1.columns
-        = image_tag 'jumbo-mobile-placeholder.png'
+        %hr
 
-#benefits-mobile-1.benefits
-  %h2.text-center Some cool tagline here
+      .feature-container
+        = image_tag "mobile-screen.png", class: "img-responsive"
+        %h2 This is a section header
+        %p Croissant chocolate cake tart gingerbread jelly ice cream jelly apple pie. Candy canes gummies cheesecake candy canes gummi bears donut. Candy canes gummies jujubes chocolate cake. Applicake biscuit gingerbread lemon drops bonbon icing topping biscuit. Applicake cupcake pie sesame snaps carrot cake cotton candy chocolate cake sesame snaps cupcake. Jelly beans candy carrot cake cotton candy jelly.
 
-  .row
-    .large-6.columns
-      = image_tag 'placeholder-iphone.png'
-    .large-6.columns
-      .text-content
-        %h3 Discover New Places
-        %p Enjoy searching through our extensive database of over 5,000 unique travel destinations. Whether you’re into landscapes, beaches, or the arctic, there’s something for everyone.
-  .row
-    .large-6.columns
-      .text-content
-        %h3 Travel With Friends
-        %p There’s no better way to enjoy your travel bucketlist than with the company of good friends, which is why we give you the ability to create bucketlist groups you can share and discuss for planning that special trip together.
-    .large-6.columns
-      = image_tag 'placeholder-iphone.png'
-  .row
-    .large-6.columns
-      = image_tag 'placeholder-iphone.png'
-    .large-6.columns 
-      .text-content
-        %h3 Track Your Adventures
-        %p What’s the point of traveling if you can’t share your amazing experiences? Create travel albums and share your travel page with friends to keep them up to date on througout your journey.
+  .benefit2
+    .container
+      .row
+        .col-md-5
+          %h2.inverse This is a section header
+          %p Croissant chocolate cake tart gingerbread jelly ice cream jelly apple pie. Candy canes gummies cheesecake candy canes gummi bears donut. Candy canes gummies jujubes chocolate cake. Applicake biscuit gingerbread lemon drops bonbon icing topping biscuit. Applicake cupcake pie sesame snaps carrot cake cotton candy chocolate cake sesame snaps cupcake. Jelly beans candy carrot cake cotton candy jelly.
+        .col-md-7
+          = image_tag "mobile-screen.png", class: "img-responsive"
 
+  .benefit3
+    .feature-container
+      = image_tag "mobile-screen.png", class: "img-responsive"
+      %h2 This is a section header
+      %p Croissant chocolate cake tart gingerbread jelly ice cream jelly apple pie. Candy canes gummies cheesecake candy canes gummi bears donut. Candy canes gummies jujubes chocolate cake. Applicake biscuit gingerbread lemon drops bonbon icing topping biscuit. Applicake cupcake pie sesame snaps carrot cake cotton candy chocolate cake sesame snaps cupcake. Jelly beans candy carrot cake cotton candy jelly.
 
-.call-to-action
-  %h1.inverse Ready for an adventure?
-  %h5.inverse Join Travelist today and discover more than 5,000 unique travel destinations.
-  = link_to "Create your bucketlist", '#', class: "button"
+  .call-to-action.text-center
+    .container
+      %h1 Ready for an adventure?
+      %p Pie jujubes bonbon sugar plum dragée tart jelly cookie donut. Apple pie sweet roll caramels <br> sweet brownie. Apple pie powder biscuit gummies.
+      = link_to "Get Started", '#', class: "btn"
 
-.footer
-  .row
-    .small-4.large-4.columns
-      %p.text-left © 2014 Travelist
-    .small-4.large-4.columns
-      %p.text-center Privacy Policy
-    .small-4.large-4.columns
-      .text-right
-        = link_to '#' do
-          = image_tag 'facebook-48.png'
-        = link_to '#' do
-          = image_tag 'twitter-48.png'

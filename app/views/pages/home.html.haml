@@ -1,29 +1,21 @@
-.container.text-center
-  %h2 Choose your application type
+#home
+  .container.text-center
+    %h2 Choose your application type
 
-  .row
-    .col-md-6
-      = link_to 'Web', '#'
-    .col-md-6
-      = link_to 'Mobile', '#'
-
-  .row
-    .col-md-6
-      .box
-        = link_to 'Web Landing 1', web_landing_one_path
-    .col-md-6
-      .box
-        = link_to 'Web Landing 2', web_landing_two_path
-
-  .row
-    .col-md-6
-      .box
-        = link_to 'Mobile Landing 1', mobile_landing_one_path
-    .col-md-6
-      .box
-        = link_to 'Mobile Landing 2', mobile_landing_two_path
-
-  .row
-    .col-md-6
-      .box
-        = link_to 'Mixed Landing 1', mixed_landing_one_path
+    .row
+      .col-md-6
+        %h2 Web
+        .box
+          = link_to 'Landing 1', web_landing_one_path
+        .box
+          = link_to 'Landing 2', web_landing_two_path
+        .box
+          = link_to 'Landing 3', web_landing_three_path
+      .col-md-6
+        %h2 Mobile
+        .box
+          = link_to 'Landing 1', mobile_landing_one_path
+        .box
+          = link_to 'Landing 2', mobile_landing_two_path
+        .box
+          = link_to 'Landing 3', mobile_landing_three_path
