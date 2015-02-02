@@ -1,12 +1,14 @@
 #web-landing-one
   .jumbotron.text-center
     .container
-      %h1{:contenteditable => true} Your travel bucketlist
+      %h1#header{:contenteditable => true} Your travel bucketlist
       %p{:contenteditable => true} Discover more than 5,000 unique travel destinations around the world and <br> start planning your next adventure.
       = link_to "Get Started", '#', class: "btn"
+    .responsive-note
+      %span#responsive
 
   .testimonial
-    = link_to 'X', '#', class: "close-testimonial close-btn"
+    = link_to 'X', '#', class: "close-testimonial close-btn", id: "optional"
 
   .benefit1
     .container
@@ -50,30 +52,30 @@
     = link_to "X", '#', class: "close-pricing close-btn"
     .container.text-center
       .pricing-header
-        %h2 Plans and Pricing
-        %p Travelist is free to use for public trips. Plan private trips with any of our paid plans.
+        %h2{:contenteditable => true} Plans and Pricing
+        %p{:contenteditable => true} Travelist is free to use for public trips. Plan private trips with any of our paid plans.
       .row
         .col-md-4
           .price-container.regular-offer
-            %h4 Standard Plan
+            %h4{:contenteditable => true} Standard Plan
             .price
-              %p $9
-              %p.month /album
+              %p{:contenteditable => true} $9
+              %p.month{:contenteditable => true} /album
             = link_to 'Choose Plan', '#', class: "btn"
         .col-md-4
           .popular-header
-            %h4 Most Popular
+            %h4{:contenteditable => true} Most Popular
           .popular-container
-            %h4 Startup Plan
+            %h4{:contenteditable => true} Startup Plan
             .price
-              %p $29
-              %p.month /album
+              %p{:contenteditable => true} $29
+              %p.month{:contenteditable => true} /album
             = link_to 'Choose Plan', '#', class: "btn"
         .col-md-4
           .price-container.regular-offer
-            %h4 Enterprise Plan
+            %h4{:contenteditable => true} Enterprise Plan
             .price
-              %p $59
-              %p.month /album
+              %p{:contenteditable => true} $59
+              %p.month{:contenteditable => true} /album
             = link_to 'Choose Plan', '#', class: "btn"
 

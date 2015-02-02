@@ -5,13 +5,14 @@
 //= require_tree .
 
 $(document).ready(function(){
-    $(".close-pricing").click(function(){
-        event.preventDefault();
-        $(".pricing").hide();
-    });
+  $(".close-pricing").click(function(){
+      event.preventDefault();
+      $(".pricing").hide();
+  });
 
-    $(".close-testimonial").click(function(){
-        event.preventDefault();
-        $(".testimonial").hide();
-    });
+  $(".close-testimonial").click(function(){
+      event.preventDefault();
+      $(".testimonial").hide();
+  });
+
 });
