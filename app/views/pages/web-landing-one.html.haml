@@ -3,10 +3,10 @@
     .container
       %h1{:contenteditable => true} Your travel bucketlist
       %p{:contenteditable => true} Discover more than 5,000 unique travel destinations around the world and <br> start planning your next adventure.
-      / = link_to "Get Started", '#', class: "btn"
-      .row
-        .col-md-8.col-md-offset-2
-          = image_tag "mac-screen.png", class: "img-responsive"
+      = link_to "Get Started", '#', class: "btn"
+
+  .testimonial
+    = link_to 'X', '#', class: "close-testimonial close-btn"
 
   .benefit1
     .container
@@ -15,29 +15,65 @@
 
         %hr
 
-      .feature-container
-        = image_tag "mac-screen.png", class: "img-responsive"
-        %h2{:contenteditable => true} This is a section header
-        %p{:contenteditable => true} Croissant chocolate cake tart gingerbread jelly ice cream jelly apple pie. Candy canes gummies cheesecake candy canes gummi bears donut. Candy canes gummies jujubes chocolate cake. Applicake biscuit gingerbread lemon drops bonbon icing topping biscuit. Applicake cupcake pie sesame snaps carrot cake cotton candy chocolate cake sesame snaps cupcake. Jelly beans candy carrot cake cotton candy jelly.
+      .row
+        .col-md-7
+          = image_tag "web-screen.png", class: "img-responsive"
+        .col-md-5
+          %h2{:contenteditable => true} This is a section header
+          %p{:contenteditable => true} Croissant chocolate cake tart gingerbread jelly ice cream jelly apple pie. Candy canes gummies cheesecake candy canes gummi bears donut. Candy canes gummies jujubes chocolate cake. Applicake biscuit gingerbread lemon drops bonbon icing topping biscuit. Applicake cupcake pie sesame snaps carrot cake cotton candy chocolate cake sesame snaps cupcake. Jelly beans candy carrot cake cotton candy jelly.
 
   .benefit2
     .container
       .row
         .col-md-5
-          %h2.inverse{:contenteditable => true} This is a section header
+          %h2{:contenteditable => true} This is a section header
           %p{:contenteditable => true} Croissant chocolate cake tart gingerbread jelly ice cream jelly apple pie. Candy canes gummies cheesecake candy canes gummi bears donut. Candy canes gummies jujubes chocolate cake. Applicake biscuit gingerbread lemon drops bonbon icing topping biscuit. Applicake cupcake pie sesame snaps carrot cake cotton candy chocolate cake sesame snaps cupcake. Jelly beans candy carrot cake cotton candy jelly.
         .col-md-7
-          = image_tag "mac-screen.png", class: "img-responsive"
+          = image_tag "web-screen.png", class: "img-responsive"
 
   .benefit3
-    .feature-container
-      = image_tag "mac-screen.png", class: "img-responsive"
-      %h2{:contenteditable => true} This is a section header
-      %p{:contenteditable => true} Croissant chocolate cake tart gingerbread jelly ice cream jelly apple pie. Candy canes gummies cheesecake candy canes gummi bears donut. Candy canes gummies jujubes chocolate cake. Applicake biscuit gingerbread lemon drops bonbon icing topping biscuit. Applicake cupcake pie sesame snaps carrot cake cotton candy chocolate cake sesame snaps cupcake. Jelly beans candy carrot cake cotton candy jelly.
+    .container
+      .row
+        .col-md-7
+          = image_tag "web-screen.png", class: "img-responsive"
+        .col-md-5
+          %h2{:contenteditable => true} This is a section header
+          %p{:contenteditable => true} Croissant chocolate cake tart gingerbread jelly ice cream jelly apple pie. Candy canes gummies cheesecake candy canes gummi bears donut. Candy canes gummies jujubes chocolate cake. Applicake biscuit gingerbread lemon drops bonbon icing topping biscuit. Applicake cupcake pie sesame snaps carrot cake cotton candy chocolate cake sesame snaps cupcake. Jelly beans candy carrot cake cotton candy jelly.
 
   .call-to-action.text-center
     .container
       %h1{:contenteditable => true} Ready for an adventure?
       %p{:contenteditable => true} Pie jujubes bonbon sugar plum dragée tart jelly cookie donut. Apple pie sweet roll caramels <br> sweet brownie. Apple pie powder biscuit gummies.
       = link_to "Get Started", '#', class: "btn"
+
+  .pricing
+    = link_to "X", '#', class: "close-pricing close-btn"
+    .container.text-center
+      .pricing-header
+        %h2 Plans and Pricing
+        %p Travelist is free to use for public trips. Plan private trips with any of our paid plans.
+      .row
+        .col-md-4
+          .price-container.regular-offer
+            %h4 Standard Plan
+            .price
+              %p $9
+              %p.month /album
+            = link_to 'Choose Plan', '#', class: "btn"
+        .col-md-4
+          .popular-header
+            %h4 Most Popular
+          .popular-container
+            %h4 Startup Plan
+            .price
+              %p $29
+              %p.month /album
+            = link_to 'Choose Plan', '#', class: "btn"
+        .col-md-4
+          .price-container.regular-offer
+            %h4 Enterprise Plan
+            .price
+              %p $59
+              %p.month /album
+            = link_to 'Choose Plan', '#', class: "btn"
 

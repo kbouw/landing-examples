@@ -15,6 +15,9 @@
           .text-center
             = image_tag "double-mobile.png", class: "img-responsive"
 
+  .testimonial
+    = link_to "X", '#', class: "close-testimonial close-btn"
+
   .benefit1
     .container
       .text-center
@@ -47,4 +50,35 @@
       %h1{:contenteditable => true} Ready for an adventure?
       %p{:contenteditable => true} Pie jujubes bonbon sugar plum dragée tart jelly cookie donut. Apple pie sweet roll caramels <br> sweet brownie. Apple pie powder biscuit gummies.
       = link_to "Get Started", '#', class: "btn"
+
+  .pricing
+    = link_to "X", '#', class: "close-pricing close-btn"
+    .container.text-center
+      .pricing-header
+        %h2 Plans and Pricing
+        %p Travelist is free to use for public trips. Plan private trips with any of our paid plans.
+      .row
+        .col-md-4
+          .price-container.regular-offer
+            %h4 Standard Plan
+            .price
+              %p $9
+              %p.month /album
+            = link_to 'Choose Plan', '#', class: "btn"
+        .col-md-4
+          .popular-header
+            %h4 Most Popular
+          .popular-container
+            %h4 Startup Plan
+            .price
+              %p $29
+              %p.month /album
+            = link_to 'Choose Plan', '#', class: "btn"
+        .col-md-4
+          .price-container.regular-offer
+            %h4 Enterprise Plan
+            .price
+              %p $59
+              %p.month /album
+            = link_to 'Choose Plan', '#', class: "btn"
 

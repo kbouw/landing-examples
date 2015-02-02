@@ -1,49 +1,81 @@
-= render 'layouts/header'
+#web-landing-one
+  .jumbotron
+    .container
+      .row
+        .col-md-6.col-md-offset-6
+          %h1{:contenteditable => true} Your travel bucketlist
+          %p{:contenteditable => true} Discover more than 5,000 unique travel destinations around the world and <br> start planning your next adventure.
+          = link_to "Get Started", '#', class: "btn"
 
-.jumbotron
-  = link_to root_path do
-    .back-button
-      = image_tag 'back-arrow.png'
+  .testimonial
+    = link_to "X", '#', class: "close-testimonial close-btn"
 
-  .jumbotron-text-container
-    %h1.inverse Your travel bucketlist
-    %h5.inverse Discover more than 5,000 unique travel destinations around the world <br> and start planning your next adventure.
-    = link_to 'Get started', '#', class: "button jumbo-cta"
+  .benefit1
+    .container
+      .text-center
+        %h2{:contenteditable => true} This is a section about the product, something <br> supportive of the benefits, features, or anything else.
 
-#benefits-web-2.text-center
-  %h2 Some cool tagline here
+        %hr
 
-  .row
-    .small-12.large-4.columns
-      = image_tag 'placeholder-image-circular.png'
-      .text-container
-        %h3 Discover New <br>Places
-        %p Enjoy searching through our extensive database of over 5,000 unique travel destinations. Whether you’re into landscapes, beaches, or the arctic, there’s something for everyone.
-    .small-12.large-4.columns
-      = image_tag 'placeholder-image-circular.png'
-      .text-container
-        %h3 Travel With <br>Friends
-        %p There’s no better way to enjoy your travel bucketlist than with the company of good friends, which is why we give you the ability to create bucketlist groups you can share and discuss for planning that special trip together.
-    .small-12.large-4.columns
-      = image_tag 'placeholder-image-circular.png'
-      .text-container
-        %h3 Track Your <br> Adventures
-        %p What’s the point of traveling if you can’t share your amazing experiences? Create travel albums and share your travel page with friends to keep them up to date on througout your journey.
+      .row
+        .col-md-7
+          = image_tag "web-screen.png", class: "img-responsive"
+        .col-md-5
+          %h2{:contenteditable => true} This is a section header
+          %p{:contenteditable => true} Croissant chocolate cake tart gingerbread jelly ice cream jelly apple pie. Candy canes gummies cheesecake candy canes gummi bears donut. Candy canes gummies jujubes chocolate cake. Applicake biscuit gingerbread lemon drops bonbon icing topping biscuit. Applicake cupcake pie sesame snaps carrot cake cotton candy chocolate cake sesame snaps cupcake. Jelly beans candy carrot cake cotton candy jelly.
 
-.call-to-action
-  %h1.inverse Ready for an adventure?
-  %h5.inverse Join Travelist today and discover more than 5,000 unique travel destinations.
-  = link_to "Create your bucketlist", '#', class: "button"
+  .benefit2
+    .container
+      .row
+        .col-md-5
+          %h2{:contenteditable => true} This is a section header
+          %p{:contenteditable => true} Croissant chocolate cake tart gingerbread jelly ice cream jelly apple pie. Candy canes gummies cheesecake candy canes gummi bears donut. Candy canes gummies jujubes chocolate cake. Applicake biscuit gingerbread lemon drops bonbon icing topping biscuit. Applicake cupcake pie sesame snaps carrot cake cotton candy chocolate cake sesame snaps cupcake. Jelly beans candy carrot cake cotton candy jelly.
+        .col-md-7
+          = image_tag "web-screen.png", class: "img-responsive"
 
-.footer
-  .row
-    .small-4.large-4.columns
-      %p.text-left © 2014 Travelist
-    .small-4.large-4.columns
-      %p.text-center Privacy Policy
-    .small-4.large-4.columns
-      .text-right
-        = link_to '#' do
-          = image_tag 'facebook-48.png'
-        = link_to '#' do
-          = image_tag 'twitter-48.png'
+  .benefit3
+    .container
+      .row
+        .col-md-7
+          = image_tag "web-screen.png", class: "img-responsive"
+        .col-md-5
+          %h2{:contenteditable => true} This is a section header
+          %p{:contenteditable => true} Croissant chocolate cake tart gingerbread jelly ice cream jelly apple pie. Candy canes gummies cheesecake candy canes gummi bears donut. Candy canes gummies jujubes chocolate cake. Applicake biscuit gingerbread lemon drops bonbon icing topping biscuit. Applicake cupcake pie sesame snaps carrot cake cotton candy chocolate cake sesame snaps cupcake. Jelly beans candy carrot cake cotton candy jelly.
+
+  .call-to-action.text-center
+    .container
+      %h1{:contenteditable => true} Ready for an adventure?
+      %p{:contenteditable => true} Pie jujubes bonbon sugar plum dragée tart jelly cookie donut. Apple pie sweet roll caramels <br> sweet brownie. Apple pie powder biscuit gummies.
+      = link_to "Get Started", '#', class: "btn"
+
+  .pricing
+    = link_to "X", '#', class: "close-pricing close-btn"
+    .container.text-center
+      .pricing-header
+        %h2 Plans and Pricing
+        %p Travelist is free to use for public trips. Plan private trips with any of our paid plans.
+      .row
+        .col-md-4
+          .price-container.regular-offer
+            %h4 Standard Plan
+            .price
+              %p $9
+              %p.month /album
+            = link_to 'Choose Plan', '#', class: "btn"
+        .col-md-4
+          .popular-header
+            %h4 Most Popular
+          .popular-container
+            %h4 Startup Plan
+            .price
+              %p $29
+              %p.month /album
+            = link_to 'Choose Plan', '#', class: "btn"
+        .col-md-4
+          .price-container.regular-offer
+            %h4 Enterprise Plan
+            .price
+              %p $59
+              %p.month /album
+            = link_to 'Choose Plan', '#', class: "btn"
+
